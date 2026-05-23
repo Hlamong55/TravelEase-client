@@ -51,7 +51,7 @@ const Navbar = () => {
       className="sticky top-0  z-50  w-full  backdrop-blur-xl 
     bg-[#0B1120]/90  border-b border-white/10  shadow-[0_8px_30px_rgb(0,0,0,0.12)]  transition-all duration-300"
     >
-      <div className="max-w-7xl mx-auto py-0.5 px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-0.5 px-6">
         <div className="flex items-center justify-between  h-[78px]">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">

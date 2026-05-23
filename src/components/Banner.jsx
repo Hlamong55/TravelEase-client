@@ -6,7 +6,7 @@ import heroCar from "../assets/heroImg.png";
 
 const Banner = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-100">
+    <section className="relative overflow-hidden bg-linear-to-br from-sky-50 via-white to-blue-100">
 
       {/* LIGHT GLOW */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-sky-300/30 blur-[120px] rounded-full"></div>
@@ -57,10 +57,10 @@ const Banner = () => {
 
                 <span
                   className="
-                    bg-gradient-to-r
-                    from-sky-500
-                    via-blue-500
-                    to-cyan-400
+                    bg-linear-to-r
+                    from-pink-400
+                    via-pink-500
+                    to-pink-400
                     bg-clip-text
                     text-transparent
                   "
@@ -92,8 +92,8 @@ const Banner = () => {
                   group
                   px-8 py-4
                   rounded-2xl
-                  bg-sky-500
-                  hover:bg-sky-600
+                 bg-[#0B1120]/90
+                  hover:bg-pink-500
                   text-white
                   font-semibold
                   shadow-lg shadow-sky-300/40
@@ -120,12 +120,13 @@ const Banner = () => {
                 className="
                   px-8 py-4
                   rounded-2xl
-                  border border-sky-200
-                  bg-white
-                  hover:bg-sky-50
-                  text-slate-800
+                  border border-sky-300
+                  bg-white/20
+                  hover:bg-[#0B1120]/90
+                  hover:text-white
                   font-semibold
                   shadow-md
+                  shadow-sky-300/40
                   transition-all duration-300
                   hover:-translate-y-1
                 "
@@ -144,8 +145,8 @@ const Banner = () => {
               <div
                 className="
                   rounded-2xl
-                  border border-sky-100
-                  bg-white/90
+                  border border-sky-200
+                  bg-white/10
                   backdrop-blur-md
                   p-5
                   shadow-md
@@ -155,7 +156,7 @@ const Banner = () => {
                   15K+
                 </h3>
 
-                <p className="text-sm text-slate-500 mt-1">
+                <p className="text-sm text-gray-500 mt-1">
                   Happy Travelers
                 </p>
               </div>
@@ -163,8 +164,8 @@ const Banner = () => {
               <div
                 className="
                   rounded-2xl
-                  border border-sky-100
-                  bg-white/90
+                  border border-sky-200
+                  bg-white/30
                   backdrop-blur-md
                   p-5
                   shadow-md
@@ -182,8 +183,8 @@ const Banner = () => {
               <div
                 className="
                   rounded-2xl
-                  border border-sky-100
-                  bg-white/90
+                  border border-sky-200
+                  bg-white/70
                   backdrop-blur-md
                   p-5
                   shadow-md
