@@ -26,13 +26,13 @@ const Banner = () => {
                 inline-flex items-center gap-2
                 px-4 py-2
                 rounded-full
-                border border-sky-200
+                border border-pink-200
                 bg-white/80
                 backdrop-blur-md
                 shadow-sm
               "
             >
-              <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
+              <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse border"></span>
 
               <p className="text-sm text-slate-700 font-medium">
                 Trusted by 15,000+ Travelers

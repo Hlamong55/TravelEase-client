@@ -104,7 +104,7 @@ const Navbar = () => {
                   to="/login"
                   className="px-4 py-2 bg-blue-500 text-white hover:bg-blue-600  font-semibold  rounded-lg  flex items-center gap-2  transition-all duration-300  hover:-translate-y-0.5  hover:shadow-lg  hover:shadow-blue-500/30"
                 >
-                  Login <MdOutlineLogin className="text-lg font-semibold" />
+                  Sign in <MdOutlineLogin className="text-lg font-semibold" />
                 </Link>
                 <Link
                   to="/register"
