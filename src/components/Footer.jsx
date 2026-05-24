@@ -140,7 +140,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:text-sky-400 transition-all duration-300"
+                  className="hover:text-pink-400 transition-all duration-300"
                 >
                   Home
                 </Link>
@@ -149,7 +149,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/about"
-                  className="hover:text-sky-400 transition-all duration-300"
+                  className="hover:text-pink-400 transition-all duration-300"
                 >
                   About
                 </Link>
@@ -158,7 +158,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/allVehicles"
-                  className="hover:text-sky-400 transition-all duration-300"
+                  className="hover:text-pink-400 transition-all duration-300"
                 >
                   All Vehicles
                 </Link>
@@ -167,7 +167,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/login"
-                  className="hover:text-sky-400 transition-all duration-300"
+                  className="hover:text-pink-400 transition-all duration-300"
                 >
                   Login
                 </Link>
@@ -183,19 +183,19 @@ const Footer = () => {
 
             <ul className="space-y-4 text-slate-400">
 
-              <li className="hover:text-sky-400 transition">
+              <li className="hover:text-pink-400 transition">
                 Luxury Car Rental
               </li>
 
-              <li className="hover:text-sky-400 transition">
+              <li className="hover:text-pink-400 transition">
                 Business Trips
               </li>
 
-              <li className="hover:text-sky-400 transition">
+              <li className="hover:text-pink-400 transition">
                 Airport Pickup
               </li>
 
-              <li className="hover:text-sky-400 transition">
+              <li className="hover:text-pink-400 transition">
                 Tour Packages
               </li>
 
@@ -211,7 +211,7 @@ const Footer = () => {
             <ul className="space-y-5 text-slate-400">
 
               <li className="flex items-start gap-3">
-                <FaEnvelope className="text-sky-400 mt-1" />
+                <FaEnvelope className="text-pink-400 mt-1" />
 
                 <span>
                   bijoymarma55@gmail.com
@@ -219,7 +219,7 @@ const Footer = () => {
               </li>
 
               <li className="flex items-start gap-3">
-                <FaPhoneAlt className="text-sky-400 mt-1" />
+                <FaPhoneAlt className="text-pink-400 mt-1" />
 
                 <span>
                   +880 1818-470577
@@ -227,7 +227,7 @@ const Footer = () => {
               </li>
 
               <li className="flex items-start gap-3">
-                <FaMapMarkerAlt className="text-sky-400 mt-1" />
+                <FaMapMarkerAlt className="text-pink-400 mt-1" />
 
                 <span>
                   Chattogram, Bangladesh
@@ -236,7 +236,7 @@ const Footer = () => {
             </ul>
 
             {/* MINI NEWSLETTER */}
-            <div className="mt-8">
+            {/* <div className="mt-8">
 
               <p className="text-sm text-slate-400 mb-3">
                 Subscribe for travel updates
@@ -269,20 +269,20 @@ const Footer = () => {
                   Join
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* DIVIDER */}
-        <div className="border-t border-white/10 mt-16 pt-6">
+        <div className="border-t border-white/15 mt-10 pt-6">
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
 
-            <p className="text-slate-500 text-sm text-center md:text-left">
+            <p className="text-slate-400 text-sm text-center md:text-left">
               © {new Date().getFullYear()} TravelEase. All rights reserved.
             </p>
 
-            <div className="flex items-center gap-6 text-sm text-slate-500">
+            <div className="flex items-center gap-6 text-sm text-slate-400">
 
               <Link
                 to="/"

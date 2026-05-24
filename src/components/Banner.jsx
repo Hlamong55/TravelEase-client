@@ -56,16 +56,10 @@ const Banner = () => {
                 <br />
 
                 <span
-                  className="
-                    bg-linear-to-r
-                    from-pink-400
-                    via-pink-500
-                    to-pink-400
-                    bg-clip-text
-                    text-transparent
+                  className="text-blue-600
                   "
                 >
-                  Booking Platform
+                  Booking <span className="text-blue-500">Platform</span>
                 </span>
               </h1>
 
@@ -93,7 +87,7 @@ const Banner = () => {
                   px-8 py-4
                   rounded-2xl
                  bg-[#0B1120]/90
-                  hover:bg-pink-500
+                  hover:bg-blue-600
                   text-white
                   font-semibold
                   shadow-lg shadow-sky-300/40
@@ -145,7 +139,7 @@ const Banner = () => {
               <div
                 className="
                   rounded-2xl
-                  border border-sky-200
+                  border border-sky-300
                   bg-white/10
                   backdrop-blur-md
                   p-5
@@ -164,7 +158,7 @@ const Banner = () => {
               <div
                 className="
                   rounded-2xl
-                  border border-sky-200
+                  border border-sky-300
                   bg-white/30
                   backdrop-blur-md
                   p-5
@@ -183,7 +177,7 @@ const Banner = () => {
               <div
                 className="
                   rounded-2xl
-                  border border-sky-200
+                  border border-sky-300
                   bg-white/70
                   backdrop-blur-md
                   p-5
@@ -235,7 +229,7 @@ const Banner = () => {
                 absolute top-5 left-0
                 bg-white/90
                 backdrop-blur-md
-                border border-pink-100
+                border border-pink-200
                 rounded-2xl
                 p-4
                 shadow-xl
@@ -256,7 +250,7 @@ const Banner = () => {
                 absolute -bottom-5 -right-5
                 bg-white
                 backdrop-blur-md
-                border border-pink-100
+                border border-pink-200
                 rounded-2xl
                 p-4
                 shadow-xl
@@ -267,7 +261,7 @@ const Banner = () => {
               </p>
 
               <p className="text-sm text-gray-600">
-                Fast & Secure
+                Fast & Secure 🔐
               </p>
             </div>
 

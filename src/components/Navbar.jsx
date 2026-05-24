@@ -102,13 +102,13 @@ const Navbar = () => {
               <>
                 <Link
                   to="/login"
-                  className="px-4 py-2 bg-pink-500 text-white hover:bg-pink-600  font-semibold  rounded-xl  flex items-center gap-2  transition-all duration-300  hover:-translate-y-0.5  hover:shadow-lg   hover:shadow-pink-500/30"
+                  className="px-4 py-2 bg-blue-500 text-white hover:bg-blue-600  font-semibold  rounded-lg  flex items-center gap-2  transition-all duration-300  hover:-translate-y-0.5  hover:shadow-lg  hover:shadow-blue-500/30"
                 >
                   Login <MdOutlineLogin className="text-lg font-semibold" />
                 </Link>
                 <Link
                   to="/register"
-                  className="bg-white/20  backdrop-blur-md  border border-white/30  hover:bg-white hover:text-black  text-white  font-semibold  px-4 py-2  rounded-xl  flex items-center gap-2 transition-all duration-300   hover:-translate-y-0.5"
+                  className="bg-white/20  backdrop-blur-md  border border-white/30  hover:bg-white hover:text-black  text-white  font-semibold  px-4 py-2  rounded-lg  flex items-center gap-2 transition-all duration-300   hover:-translate-y-0.5"
                 >
                   Register <PiUserCirclePlusBold className="text-lg font-semibold" />
                 </Link>
