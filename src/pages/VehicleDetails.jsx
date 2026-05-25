@@ -402,24 +402,24 @@ const VehicleDetails = () => {
                 bg-white
                 border border-gray-200
                 rounded-[30px]
-                shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+                shadow-[0_10px_40px_rgba(0,0,0,0.10)]
                 p-7
                 text-center
               "
-            >
+             >
 
-              <p className="text-gray-500 text-sm font-semibold flex items-center justify-center gap-2">
+              <p className="text-gray-600 font-semibold flex items-center justify-center gap-2">
                 <GrMoney className="text-blue-500" />
                 Starting From
               </p>
 
               <h2 className="text-5xl font-black text-blue-600 tracking-tight mt-3">
-                ${pricePerDay}
+                ${pricePerDay} <span className="text-gray-500 text-xl mt-2 font-medium">
+                / per day
+              </span>
               </h2>
 
-              <p className="text-gray-500 mt-2 font-medium">
-                per day
-              </p>
+              
 
               {/* BOOK BUTTON */}
               <button
@@ -427,7 +427,7 @@ const VehicleDetails = () => {
                 disabled={availability !== "Available"}
                 className={`w-full py-4 rounded-2xl font-bold text-lg mt-7 transition-all duration-300 ${
                   availability === "Available"
-                    ? "bg-gradient-to-r from-blue-500 to-sky-500 hover:from-blue-600 hover:to-sky-600 text-white shadow-lg shadow-blue-200 hover:scale-[1.02]"
+                    ? "bg-linear-to-r from-blue-500 to-sky-500 hover:from-blue-600 hover:to-sky-600 text-white shadow-lg shadow-blue-200 hover:scale-[1.02]"
                     : "bg-gray-300 text-gray-500 cursor-not-allowed"
                 }`}
               >
@@ -447,15 +447,15 @@ const VehicleDetails = () => {
                 shadow-[0_10px_40px_rgba(0,0,0,0.08)]
                 p-6
               "
-            >
+             >
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-5">
+              <h3 className="text-2xl font-bold text-gray-900 border-b border-gray-300 mb-5">
                 Vehicle Owner
               </h3>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-5">
 
-                <FaUserCircle className="text-6xl text-blue-500" />
+                <FaUserCircle className="text-7xl" />
 
                 <div>
                   <p className="font-bold text-gray-900 text-lg">
@@ -482,23 +482,23 @@ const VehicleDetails = () => {
               "
             >
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-5">
+              <h3 className="text-2xl font-bold text-gray-900 border-b border-gray-300 mb-5">
                 User Rating
               </h3>
 
-              <div className="flex gap-1 text-yellow-400 text-2xl">
+              <div className="flex gap-1 text-yellow-500 text-2xl">
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
-                <FaStar className="opacity-40" />
+                <FaStar className="opacity-50" />
               </div>
 
-              <p className="text-gray-600 mt-3 font-medium">
+              <p className="text-gray-600 text-lg mt-3 font-bold">
                 4.8 average rating from renters
               </p>
 
-              <div className="mt-4 flex items-center gap-2 text-sm text-gray-500 font-medium">
+              <div className="mt-4 flex items-center gap-2 text-gray-700 font-medium">
                 <span>120+ verified reviews</span>
               </div>
 
@@ -509,7 +509,7 @@ const VehicleDetails = () => {
         </div>
 
         {/* RELATED VEHICLES */}
-        <div className="mt-20">
+        <div className="mt-24">
 
           <div className="flex items-center justify-between mb-10">
 
@@ -519,7 +519,7 @@ const VehicleDetails = () => {
 
             <Link
               to="/allVehicles"
-              className="text-blue-600 font-bold hover:underline"
+              className="text-blue-600 text-lg font-bold hover:underline"
             >
               View All →
             </Link>
@@ -564,13 +564,13 @@ const VehicleDetails = () => {
                       {v.vehicleName}
                     </h3>
 
-                    <span className="text-blue-600 font-black text-xl">
+                    <span className="text-blue-600 font-black text-2xl">
                       ${v.pricePerDay}
                     </span>
 
                   </div>
 
-                  <div className="flex items-center gap-2 mt-3 text-gray-500 font-medium">
+                  <div className="flex items-center gap-2 mt-3 text-gray-600 font-medium">
                     <FaMapMarkerAlt className="text-blue-500" />
                     {v.location}
                   </div>
@@ -579,7 +579,7 @@ const VehicleDetails = () => {
                     to={`/vehicle/${v._id}`}
                     className="
                       mt-6 inline-block w-full text-center
-                      bg-blue-600 hover:bg-blue-700
+                      bg-[#1e293b] hover:bg-blue-600
                       text-white
                       py-3 rounded-2xl
                       font-bold
