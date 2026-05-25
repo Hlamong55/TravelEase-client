@@ -19,7 +19,7 @@ const Footer = () => {
 
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/10 blur-[140px] rounded-full"></div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-10 pb-6 relative z-10">
 
         {/* TOP SECTION */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -274,7 +274,7 @@ const Footer = () => {
         </div>
 
         {/* DIVIDER */}
-        <div className="border-t border-white/15 mt-10 pt-6">
+        <div className="border-t border-white/15 mt-10 pt-5">
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
 

@@ -95,7 +95,7 @@ const QuickSearchBar = () => {
           {/* LOCATION */}
           <div className="relative">
 
-            <label className="block font-semibold text-gray-600 mb-3">
+            <label className="block font-semibold mb-3">
               Pickup Location
             </label>
 
@@ -172,7 +172,7 @@ const QuickSearchBar = () => {
           {/* CATEGORY */}
           <div>
 
-            <label className="block font-semibold text-gray-600 mb-3">
+            <label className="block font-semibold mb-3">
               Vehicle Type
             </label>
 
@@ -210,7 +210,7 @@ const QuickSearchBar = () => {
           {/* DATE */}
           <div>
 
-            <label className="block font-semibold text-gray-600 mb-3">
+            <label className="block font-semibold mb-3">
               Pickup Date
             </label>
 
