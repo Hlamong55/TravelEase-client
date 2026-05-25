@@ -1,141 +1,343 @@
 import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { FaCarAlt } from "react-icons/fa";
-import { BiSearch } from "react-icons/bi";
 
 const StaticSections = () => {
   const categories = [
     {
       title: "Sedans",
-      desc: "Stylish and comfortable 4-seaters for your daily city rides.",
+      desc: "Comfortable and stylish city rides for everyday travel.",
       img: "https://i.ibb.co.com/1ffYFLj8/What-is-Hatchback-web-insider-sedan-vs-hatchback.jpg",
     },
     {
       title: "SUVs",
-      desc: "Perfect for family trips, off-road adventures, and long drives.",
+      desc: "Perfect for family adventures and long-distance journeys.",
       img: "https://i.ibb.co.com/0RbCp6ng/DARCARS-Toyota-of-Frederick-Small-SUV-model-ls3.webp",
     },
     {
       title: "Electric",
-      desc: "Go green with efficient and eco-friendly electric vehicles.",
+      desc: "Modern eco-friendly vehicles built for the future.",
       img: "https://i.ibb.co.com/pjvDYK8M/Ford-Mach-E-awd.webp",
     },
     {
       title: "Vans",
-      desc: "Spacious and reliable vans for group travel and cargo transport.",
+      desc: "Spacious vehicles for group trips and cargo transport.",
       img: "https://i.ibb.co.com/W4zwy2dd/15-1716549592.jpg",
     },
   ];
 
   return (
-    <div className="bg-gray-100 text-text overflow-hidden font-sans">
-      <section className="max-w-7xl mx-auto px-6 py-16 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold mb-12 text-gray-700"
-        >
-          <div className="flex items-center justify-center gap-3">
-            Top Vehicle Categories{" "}
-            <span className="text-secondary h-8">
-              <FaCarAlt size={40} />
-            </span>
-          </div>
-        </motion.h2>
+    <div className="bg-blue-50 overflow-hidden">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* ========================= */}
+      {/* TOP VEHICLE CATEGORIES */}
+      {/* ========================= */}
+
+      <section className="max-w-7xl mx-auto px-6 pt-24">
+
+        {/* HEADER */}
+        <div className="text-center mb-12">
+
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-blue-100 border border-blue-200 text-blue-700 font-semibold text-sm mb-6">
+            Premium Vehicle Collection
+          </div>
+
+          <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900">
+            Top Vehicle
+            <span className="text-blue-600"> Categories</span>
+          </h2>
+
+          <p className="max-w-2xl mx-auto mt-6 text-gray-600 text-lg leading-8 font-medium">
+            Explore luxury vehicles designed for comfortable city rides,
+            family tours, business trips, and unforgettable adventures.
+          </p>
+
+        </div>
+
+        {/* CATEGORY GRID */}
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+
           {categories.map((cat, index) => (
+
             <motion.div
               key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white shadow-md hover:shadow-lg rounded-2xl overflow-hidden transition transform hover:-translate-y-1"
+              className="
+                group
+                bg-white
+                border border-gray-200
+                rounded-4xl
+                overflow-hidden
+                shadow-[0_10px_40px_rgba(0,0,0,0.06)]
+                hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]
+                transition-all duration-500
+                hover:-translate-y-2
+              "
             >
-              <div className="relative overflow-hidden h-40">
-                <motion.img
-                  whileHover={{ scale: 1.1 }}
+
+              {/* IMAGE */}
+              <div className="relative overflow-hidden h-64">
+
+                <img
                   src={cat.img}
                   alt={cat.title}
-                  className="w-full h-full object-cover transition-transform duration-500"
+                  className="
+                    w-full h-full object-cover
+                    group-hover:scale-110
+                    transition duration-700
+                  "
                 />
+
+                <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent"></div>
+
+                <div className="absolute bottom-5 left-5">
+
+                  <h3 className="text-3xl font-black text-white tracking-tight">
+                    {cat.title}
+                  </h3>
+
+                </div>
+
               </div>
-              <div className="p-5">
-                <h3 className="text-lg font-bold text-gray-700">{cat.title}</h3>
-                <p className="text-base text-gray-600 mt-2">{cat.desc}</p>
+
+              {/* CONTENT */}
+              <div className="p-6">
+
+                <p className="text-gray-600 leading-7 font-medium">
+                  {cat.desc}
+                </p>
+
               </div>
+
             </motion.div>
           ))}
+
         </div>
+
       </section>
 
-      <section className="bg-gray-100">
-        <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-20">
-         
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="w-full md:w-1/2 flex justify-center"
-          >
-            <img
-              src="https://i.ibb.co.com/Mk66vCtT/360-F-313468655-r-HXrxj-TPVPZB4-HBOVR6-NUm-UZNNsbh-CGO.jpg"
-              className="rounded-3xl shadow-xl w-full max-w-lg object-cover"
-            />
-          </motion.div>
 
-          <div className="w-full md:w-1/2 text-center md:text-left">
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold mb-6 text-gray-700"
-            >
-              About <span className="text-secondary">TravelEase</span>
-            </motion.h2>
 
-            <motion.p
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="max-w-3xl text-gray-600 leading-relaxed text-base md:text-lg mb-10"
-            >
-              <span className="text-secondary font-semibold">TravelEase</span>{" "}
-              is your trusted companion for vehicle booking and trip management.
-              Whether you're planning a short drive or a long road trip, you can
-              find, list, and manage vehicles effortlessly. Our platform ensures
-              a seamless experience, verified owners, and easy booking—so you
-              can focus on your journey, not the hassle.
-            </motion.p>
+      {/* TRAVEL EXPERIENCES */}
 
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="flex justify-center md:justify-start"
-            >
-              <div className="flex w-full max-w-md rounded-full overflow-hidden shadow-lg">
-                <input
-                  type="text"
-                  placeholder="Search for Cars..."
-                  className="flex-1 px-5 py-3 text-gray-700 border rounded-l-full"
-                />
-                <button className="bg-secondary hover:bg-purple-700 transition hover:text-white px-5 py-3">
-                  <BiSearch size={22} />
-                </button>
-              </div>
-            </motion.div>
+      <section className="py-24 bg-linear-to-br from-slate-50 via-blue-50 to-pink-50">
+
+        <div className="max-w-7xl mx-auto ">
+
+          {/* HEADER */}
+          <div className="text-center mb-12">
+
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900 leading-tight">
+              Experience Better
+              <span className="text-blue-600"> Travel</span>
+            </h2>
+
+            <p className="max-w-3xl mx-auto mt-4 text-gray-600 text-lg leading-7 font-medium">
+              From airport pickups to luxury road trips —
+              TravelEase delivers seamless premium travel experiences
+              designed for comfort, safety, and unforgettable journeys.
+            </p>
+
           </div>
+
+          {/* EXPERIENCE GRID */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7">
+
+            {/* LARGE CARD */}
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="
+                group
+                relative
+                min-h-[650px]
+                rounded-[36px]
+                overflow-hidden
+                shadow-[0_10px_40px_rgba(0,0,0,0.10)]
+              "
+            >
+
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1400&auto=format&fit=crop"
+                alt="Luxury Travel"
+                className="
+                  w-full h-full object-cover
+                  group-hover:scale-105
+                  transition duration-700
+                "
+              />
+
+              <div className="absolute inset-0 bg-linear-to-t from-black via-black/30 to-transparent"></div>
+
+              <div className="absolute bottom-0 p-10 text-white">
+
+                <span className="bg-white/20 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-sm font-semibold">
+                  Luxury Experience
+                </span>
+
+                <h3 className="text-5xl font-black tracking-tight mt-6 leading-tight">
+                  Discover Premium
+                  Road Trips
+                </h3>
+
+                <p className="mt-6 text-gray-200 leading-8 text-lg max-w-xl font-medium">
+                  Enjoy unforgettable journeys with luxury vehicles,
+                  scenic destinations, and seamless booking experiences
+                  crafted for modern travelers.
+                </p>
+
+              </div>
+
+            </motion.div>
+
+            {/* RIGHT GRID */}
+            <div className="grid grid-cols-1 gap-7">
+
+              {/* CARD 1 */}
+              <motion.div
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="
+                  group
+                  relative
+                  h-[310px]
+                  rounded-4xl
+                  overflow-hidden
+                  shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+                "
+              >
+
+                <img
+                  src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1400&auto=format&fit=crop"
+                  alt="Airport Transfer"
+                  className="
+                    w-full h-full object-cover
+                    group-hover:scale-105
+                    transition duration-700
+                  "
+                />
+
+                <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent"></div>
+
+                <div className="absolute bottom-0 p-7 text-white">
+
+                  <h3 className="text-3xl font-black tracking-tight mb-3">
+                    Airport Transfers
+                  </h3>
+
+                  <p className="text-gray-200 leading-7 font-medium max-w-md">
+                    Stress-free premium airport pickups with reliable
+                    drivers and luxury comfort.
+                  </p>
+
+                </div>
+
+              </motion.div>
+
+              {/* CARD 2 */}
+              <div className="grid grid-cols-1 gap-7">
+
+                {/* BUSINESS */}
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="
+                    group
+                    relative
+                    h-[310px]
+                    rounded-4xl
+                    overflow-hidden
+                    shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+                  "
+                >
+
+                  <img
+                    src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1400&auto=format&fit=crop"
+                    alt="Business Travel"
+                    className="
+                      w-full h-full object-cover
+                      group-hover:scale-105
+                      transition duration-700
+                    "
+                  />
+
+                  <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent"></div>
+
+                  <div className="absolute bottom-0 p-6 text-white">
+
+                    <h3 className="text-2xl font-black tracking-tight mb-2">
+                      Business Trips
+                    </h3>
+
+                    <p className="text-gray-200 leading-7 font-medium text-sm">
+                      Executive vehicles for modern corporate travel.
+                    </p>
+
+                  </div>
+
+                </motion.div>
+
+                {/* FAMILY */}
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="
+                    group
+                    relative
+                    h-[310px]
+                    rounded-4xl
+                    overflow-hidden
+                    shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+                  "
+                >
+
+                  <img
+                    src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=1400&auto=format&fit=crop"
+                    alt="Family Travel"
+                    className="
+                      w-full h-full object-cover
+                      group-hover:scale-105
+                      transition duration-700
+                    "
+                  />
+
+                  <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent"></div>
+
+                  <div className="absolute bottom-0 p-6 text-white">
+
+                    <h3 className="text-2xl font-black tracking-tight mb-2">
+                      Family Tours
+                    </h3>
+
+                    <p className="text-gray-200 leading-7 font-medium text-sm">
+                      Spacious and safe rides for family adventures.
+                    </p>
+
+                  </div>
+
+                </motion.div>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
+
       </section>
+
     </div>
   );
 };

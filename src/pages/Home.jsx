@@ -13,9 +13,7 @@ const Home = () => {
             <QuickSearchBar></QuickSearchBar>
             <LatestVehicles></LatestVehicles>
             <StaticSections></StaticSections>
-            <div className='border-t-2 border-gray-400'></div>
             <Testimonials></Testimonials>
-            <div className='border-t-2 border-gray-300'></div>
             <FAQ></FAQ>
         </div>
     );

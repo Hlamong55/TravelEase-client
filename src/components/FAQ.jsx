@@ -60,11 +60,6 @@ const FAQ = () => {
         {/* TOP */}
         <div className="text-center mb-16">
 
-          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-blue-100 border border-blue-200 text-blue-700 font-semibold text-sm mb-6">
-            <MdOutlineSupportAgent className="text-lg" />
-            24/7 Customer Support
-          </div>
-
           <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900 leading-tight">
             Frequently Asked
             <span className="text-blue-600"> Questions</span>
@@ -79,26 +74,17 @@ const FAQ = () => {
         </div>
 
         {/* MAIN GRID */}
-        <div className="grid lg:grid-cols-5 gap-10 items-start">
+        <div className="grid lg:grid-cols-5 gap-10 items-center">
 
           {/* LEFT PANEL */}
           <div
-            className="
-              lg:col-span-2
-              bg-white/80
-              backdrop-blur-xl
-              border border-gray-200
-              rounded-4xl
-              p-8
-              shadow-[0_10px_40px_rgba(0,0,0,0.06)]
-              sticky top-28
-            "
-          >
+            className=" lg:col-span-2  bg-white/80  backdrop-blur-xl  border border-gray-200  rounded-4xl  p-8  shadow-[0_10px_40px_rgba(0,0,0,0.06)]  sticky top-28"
+           >
 
             <div className="inline-flex items-center  gap-3 px-5 py-3 rounded-2xl bg-blue-100 border border-blue-200 text-blue-700 text-xl font-bold tracking-wide mb-4 w-full">
             <MdOutlineSupportAgent size={45} />
             24/7 Customer Support
-          </div>
+            </div>
 
             <h3 className="text-3xl font-black tracking-tight text-gray-900 leading-tight">
               Need Any Help?
@@ -114,15 +100,15 @@ const FAQ = () => {
             <div className="space-y-4 mt-8">
 
               <div className="flex items-center gap-3 bg-blue-50 border border-blue-100 rounded-2xl p-4">
-                <FaShieldAlt className="text-blue-500 text-xl" />
+                <FaShieldAlt className="text-blue-500 text-2xl" />
 
                 <p className="font-semibold text-gray-700">
                   Secure & Trusted Booking
                 </p>
               </div>
 
-              <div className="flex items-center gap-3 bg-pink-50 border border-pink-100 rounded-2xl p-4">
-                <FaHeadset className="text-pink-500 text-xl" />
+              <div className="flex items-center gap-3 bg-pink-100 border border-pink-100 rounded-2xl p-4">
+                <FaHeadset className="text-pink-500 text-2xl" />
 
                 <p className="font-semibold text-gray-700">
                   Dedicated Customer Support
@@ -133,17 +119,7 @@ const FAQ = () => {
 
             {/* CONTACT BUTTON */}
             <button
-              className="
-                mt-10 w-full
-                bg-linear-to-r from-blue-500 to-sky-500
-                hover:from-blue-600 hover:to-sky-600
-                text-white
-                py-4 rounded-2xl
-                font-bold text-lg
-                transition-all duration-300
-                shadow-lg shadow-blue-200
-                hover:scale-[1.02]
-              "
+              className=" mt-8 w-full  bg-[#0B1120]/85  hover:bg-blue-600  text-white  py-4 rounded-2xl  font-bold text-lg  transition-all duration-300  shadow-lg shadow-blue-200  hover:scale-[1.02]"
             >
               Contact Support
             </button>
@@ -151,7 +127,7 @@ const FAQ = () => {
           </div>
 
           {/* FAQ RIGHT SIDE */}
-          <div className="lg:col-span-3 space-y-5">
+          <div className="lg:col-span-3 space-y-4">
 
             {faqData.map((faq, index) => {
               const isOpen = activeIndex === index;
@@ -181,7 +157,7 @@ const FAQ = () => {
                       flex items-center justify-between
                       gap-5
                       text-left
-                      px-7 py-6
+                      px-7 py-5
                     "
                   >
 
@@ -194,18 +170,18 @@ const FAQ = () => {
                         min-w-12 min-h-12
                         rounded-2xl
                         flex items-center justify-center
-                        transition-all duration-300
+                        transition-all duration-300 
                         ${
                           isOpen
                             ? "bg-blue-500 text-white rotate-180"
-                            : "bg-gray-100 text-gray-700"
+                            : "bg-gray-200 text-gray-800"
                         }
                       `}
                     >
                       {isOpen ? (
-                        <FiMinus size={22} />
+                        <FiMinus size={25} />
                       ) : (
-                        <FiPlus size={22} />
+                        <FiPlus size={25} />
                       )}
                     </div>
 
@@ -229,7 +205,7 @@ const FAQ = () => {
 
                         <div className="border-t border-gray-200 pt-5">
 
-                          <p className="text-gray-600 leading-8 font-medium text-base">
+                          <p className="text-gray-700 leading-8 font-medium text-base">
                             {faq.answer}
                           </p>
 
