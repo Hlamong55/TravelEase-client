@@ -162,7 +162,7 @@ const AllVehicles = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-0.5">
         {/* TOP FILTER BAR */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">
-          <h2 className="text-3xl font-bold text-gray-700">
+          <h2 className="text-4xl font-bold text-gray-700">
             Available Cars:
             <span className="text-sky-500 ml-2">{availableCars}</span>
           </h2>

@@ -12,7 +12,7 @@ const StaticSections = () => {
     {
       title: "SUVs",
       desc: "Perfect for family adventures and long-distance journeys.",
-      img: "https://i.ibb.co.com/0RbCp6ng/DARCARS-Toyota-of-Frederick-Small-SUV-model-ls3.webp",
+      img: "https://i.ibb.co.com/wZfZzGZp/toyota-landcruiser-prado-altitude-banner-1400x600.jpg",
     },
     {
       title: "Electric",
@@ -22,16 +22,14 @@ const StaticSections = () => {
     {
       title: "Vans",
       desc: "Spacious vehicles for group trips and cargo transport.",
-      img: "https://i.ibb.co.com/W4zwy2dd/15-1716549592.jpg",
+      img: "https://i.ibb.co.com/8gBPQGYy/gray-cargo-van-driving-rainy-highway-delivery-rain-169016-70096.avif",
     },
   ];
 
   return (
     <div className="bg-blue-50 overflow-hidden">
 
-      {/* ========================= */}
       {/* TOP VEHICLE CATEGORIES */}
-      {/* ========================= */}
 
       <section className="max-w-7xl mx-auto px-6 pt-24">
 
@@ -207,7 +205,7 @@ const StaticSections = () => {
                 className="
                   group
                   relative
-                  h-[310px]
+                  h-[300px]
                   rounded-4xl
                   overflow-hidden
                   shadow-[0_10px_40px_rgba(0,0,0,0.08)]
@@ -228,7 +226,7 @@ const StaticSections = () => {
 
                 <div className="absolute bottom-0 p-7 text-white">
 
-                  <h3 className="text-3xl font-black tracking-tight mb-3">
+                  <h3 className="text-3xl font-black tracking-tight mb-1">
                     Airport Transfers
                   </h3>
 
@@ -253,7 +251,7 @@ const StaticSections = () => {
                   className="
                     group
                     relative
-                    h-[310px]
+                    h-[300px]
                     rounded-4xl
                     overflow-hidden
                     shadow-[0_10px_40px_rgba(0,0,0,0.08)]
@@ -274,11 +272,11 @@ const StaticSections = () => {
 
                   <div className="absolute bottom-0 p-6 text-white">
 
-                    <h3 className="text-2xl font-black tracking-tight mb-2">
+                    <h3 className="text-3xl font-black tracking-tight mb-1">
                       Business Trips
                     </h3>
 
-                    <p className="text-gray-200 leading-7 font-medium text-sm">
+                    <p className="text-gray-200 leading-7 font-medium ">
                       Executive vehicles for modern corporate travel.
                     </p>
 
@@ -295,7 +293,7 @@ const StaticSections = () => {
                   className="
                     group
                     relative
-                    h-[310px]
+                    h-[300px]
                     rounded-4xl
                     overflow-hidden
                     shadow-[0_10px_40px_rgba(0,0,0,0.08)]
@@ -316,11 +314,11 @@ const StaticSections = () => {
 
                   <div className="absolute bottom-0 p-6 text-white">
 
-                    <h3 className="text-2xl font-black tracking-tight mb-2">
+                    <h3 className="text-3xl font-black tracking-tight mb-1">
                       Family Tours
                     </h3>
 
-                    <p className="text-gray-200 leading-7 font-medium text-sm">
+                    <p className="text-gray-200 leading-7 font-medium">
                       Spacious and safe rides for family adventures.
                     </p>
 

@@ -8,7 +8,6 @@ import Login from "../pages/Login";
 import PrivateRoute from "./PrivateRoute";
 import VehicleDetails from "../pages/VehicleDetails";
 import ErrorPage from "../pages/ErrorPage";
-import HowItWorks from "../pages/HowItWorks";
 import DashboardLayout from "../layout/DashboardLayout";
 import DashboardHome from "../pages/dashboard/DashboardHome";
 import Profile from "../pages/dashboard/Profile";
@@ -16,6 +15,7 @@ import MyVehicles from "../pages/dashboard/MyVehicles";
 import MyBookings from "../pages/dashboard/MyBookings";
 import UpdateVehicle from "../pages/dashboard/UpdateVehicle";
 import AddVehicle from "../pages/dashboard/AddVehicle";
+import About from "../pages/About";
 
 export const router = createBrowserRouter([
   {
@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "about",
-        element: <HowItWorks></HowItWorks>
+        element: <About></About>
       },
       {
         path: "vehicle/:id",
