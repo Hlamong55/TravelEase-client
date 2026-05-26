@@ -101,8 +101,8 @@ const Login = () => {
             Welcome Back 👋
           </h2>
           <p className="text-center text-gray-700 mb-8 text-lg">
-            Login to your{" "}
-            <span className="font-bold text-purple-700">TravelEase</span>{" "}
+            Login to your{" "} <span className="text-black font-bold">Travel</span>
+            <span className="font-bold text-pink-500">Ease</span>{" "}
             account
           </p>
 
@@ -204,9 +204,9 @@ const Login = () => {
         className="md:w-1/2 w-full hidden md:flex items-center justify-center pr-20"
       >
         <img
-          src="https://i.ibb.co.com/bRmKqn94/road-gps-navigation-city-map-car-street-highway-roadmap-infographics-stock-vector-156915584.webp"
+          src="https://i.ibb.co.com/mCd0T9pZ/login.jpg"
           alt="Login img"
-          className="rounded-2xl shadow-lg w-full max-w-min"
+          className="rounded-2xl h-2/3 shadow-lg w-full "
         />
       </motion.div>
     </div>
