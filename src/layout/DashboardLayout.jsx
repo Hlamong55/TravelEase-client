@@ -169,10 +169,10 @@ const DashboardLayout = () => {
 
       {/* ================== */}
       {/* MAIN AREA */}
-      <div className="flex-1 flex flex-col min-w-0">
+      <div className="flex-1 flex flex-col h-screen overflow-hidden">
 
         {/* HEADER */}
-        <header className="  sticky top-0 z-40  h-20  bg-white/90  backdrop-blur-xl  border-b border-gray-300 shadow-xl  flex items-center justify-between  px-5 md:px-8">
+        <header className=" fixed top-0 right-0 z-40  h-20 md:ml-[280px] left-0  bg-white/90  backdrop-blur-xl  border-b border-gray-300 shadow-xl  flex items-center justify-between  px-5 md:px-8">
 
           {/* LEFT */}
           <div className="flex items-center gap-4">
@@ -298,7 +298,7 @@ const DashboardLayout = () => {
         </header>
 
         {/* MAIN CONTENT */}
-        <main className="flex-1 overflow-y-auto">
+        <main className="flex-1 overflow-y-auto pt-20">
           <Outlet />
         </main>
 
@@ -323,9 +323,8 @@ const DashboardLayout = () => {
 
 export default DashboardLayout;
 
-/* ================================================= */
+/* ======================= */
 /* NAV ITEM */
-/* ================================================= */
 const NavItem = ({ to, icon, label, end = false }) => (
   <NavLink
     to={to}

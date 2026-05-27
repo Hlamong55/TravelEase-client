@@ -144,10 +144,7 @@ const DashboardHome = () => {
               </div>
 
               <div
-                className={`
-                  w-16 h-16 rounded-2xl
-                  flex items-center justify-center
-                  text-3xl
+                className={` w-16 h-16 rounded-2xl flex items-center justify-center  text-3xl
                   ${item.bg}
                   ${item.text}
                 `}
@@ -160,12 +157,7 @@ const DashboardHome = () => {
             {/* BOTTOM */}
             <div className="mt-8 flex items-center gap-2">
 
-              <div className="
-                w-7 h-7 rounded-full
-                bg-green-100
-                flex items-center justify-center
-                text-green-600 text-xs
-              ">
+              <div className=" w-7 h-7 rounded-full bg-green-100  flex items-center justify-center  text-green-600 text-xs">
                 <FaArrowUp />
               </div>
 
@@ -179,14 +171,7 @@ const DashboardHome = () => {
             </div>
 
             {/* GLOW */}
-            <div className="
-              absolute -top-10 -right-10
-              w-32 h-32
-              bg-blue-100/40
-              blur-3xl
-              rounded-full
-              opacity-0 group-hover:opacity-100
-              transition
+            <div className=" absolute -top-10 -right-10  w-32 h-32  bg-blue-100/40  blur-3xl  rounded-full  opacity-0 group-hover:opacity-100  transition
             "></div>
 
           </div>
@@ -194,19 +179,13 @@ const DashboardHome = () => {
 
       </div>
 
-      {/* ================================================= */}
+      {/* ======================= */}
       {/* CHART + SUMMARY */}
-      {/* ================================================= */}
+
       <div className="grid lg:grid-cols-3 gap-6 mt-10">
 
         {/* CHART */}
-        <div className="
-          lg:col-span-2
-          bg-white
-          rounded-[32px]
-          border border-gray-200
-          p-7
-          shadow-sm
+        <div className=" lg:col-span-2  bg-white  rounded-4xl  border border-gray-200  p-7  shadow-sm
         ">
 
           {/* HEADER */}
@@ -224,12 +203,7 @@ const DashboardHome = () => {
 
             </div>
 
-            <div className=" bg-blue-50
-              text-blue-600
-              px-4 py-2
-              rounded-full
-              text-sm
-              font-bold
+            <div className=" bg-blue-50  text-blue-6  px-4 py-2  rounded-full  text-sm  font-bold
             ">
               +24% Growth
             </div>
@@ -293,25 +267,11 @@ const DashboardHome = () => {
         </div>
 
         {/* SIDE SUMMARY */}
-        <div className="
-          bg-gradient-to-br
-          from-blue-600
-          via-blue-700
-          to-slate-900
-          rounded-[32px]
-          p-7
-          text-white
-          relative
-          overflow-hidden
+        <div className=" bg-linear-to-br  from-blue-600  via-blue-700  to-slate-900  rounded-4xl  p-7  text-white  relative  overflow-hidden
         ">
 
           {/* BLUR */}
-          <div className="
-            absolute top-0 right-0
-            w-40 h-40
-            bg-white/10
-            blur-3xl
-            rounded-full
+          <div className=" absolute top-0 right-0  w-40 h-40  bg-white/10  blur-3xl  rounded-full
           "></div>
 
           <div className="relative z-10">
@@ -332,12 +292,7 @@ const DashboardHome = () => {
             {/* MINI STATS */}
             <div className="space-y-5 mt-10">
 
-              <div className="
-                bg-white/10
-                border border-white/10
-                rounded-2xl
-                p-5
-                backdrop-blur-xl
+              <div className=" bg-white/10  border border-white/10  rounded-2xl  p-5  backdrop-blur-xl
               ">
 
                 <p className="text-blue-200 text-sm font-medium">
@@ -356,12 +311,7 @@ const DashboardHome = () => {
 
               </div>
 
-              <div className="
-                bg-white/10
-                border border-white/10
-                rounded-2xl
-                p-5
-                backdrop-blur-xl
+              <div className=" bg-white/10  border border-white/10  rounded-2xl  p-5  backdrop-blur-xl
               ">
 
                 <p className="text-blue-200 text-sm font-medium">
@@ -382,24 +332,13 @@ const DashboardHome = () => {
 
       </div>
 
-      {/* ================================================= */}
+      {/* ================== */}
       {/* RECENT BOOKINGS */}
-      {/* ================================================= */}
-      <div className="
-        mt-10
-        bg-white
-        rounded-[32px]
-        border border-gray-200
-        shadow-sm
-        overflow-hidden
+      <div className=" mt-10 bg-white  rounded-4xl  border border-gray-200  shadow-sm  overflow-hidden
       ">
 
         {/* HEADER */}
-        <div className="
-          px-7 py-6
-          border-b border-gray-100
-          flex items-center justify-between
-        ">
+        <div className=" px-7 py-6 border-b border-gray-100  flex items-center justify-between">
 
           <div>
 
@@ -413,14 +352,7 @@ const DashboardHome = () => {
 
           </div>
 
-          <button className="
-            px-5 py-2.5 rounded-full
-            bg-blue-50
-            text-blue-600
-            font-bold
-            hover:bg-blue-100
-            transition
-          ">
+          <button className=" px-5 py-2.5 rounded-full bg-blue-50  text-blue-600  font-bold  hover:bg-blue-100 transition">
             View All
           </button>
 
@@ -475,10 +407,7 @@ const DashboardHome = () => {
                       <img
                         src={booking.image}
                         alt={booking.vehicle}
-                        className="
-                          w-16 h-16
-                          rounded-2xl
-                          object-cover
+                        className="  w-16 h-16  rounded-2xl  object-cover
                         "
                       />
 
