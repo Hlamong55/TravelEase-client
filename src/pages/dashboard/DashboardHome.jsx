@@ -95,7 +95,7 @@ const recentBookings = [
 
 const DashboardHome = () => {
   return (
-    <div className="min-h-screen bg-[#f6f8fc] p-6 md:p-8">
+    <div className="min-h-screen bg-gray-200 p-6 md:p-8">
  
       {/* HEADER */}
       <div className=" mb-8">

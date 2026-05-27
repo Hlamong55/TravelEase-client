@@ -78,7 +78,7 @@ const Profile = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#f6f8fc] p-6 md:p-8">
+    <div className="min-h-screen bg-gray-200 p-6 md:p-8">
 
       {/* HEADER */}
       <div className="mb-8">
@@ -101,7 +101,7 @@ const Profile = () => {
       ">
 
         {/* TOP SECTION */}
-        <div className=" relative  bg-[#0B1120]/90  px-8 md:px-10  py-12  overflow-hidden
+        <div className=" relative  bg-[#0B1120]/90  px-8 md:px-10  py-10  overflow-hidden
         ">
 
           <div className="
