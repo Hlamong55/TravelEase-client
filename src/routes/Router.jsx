@@ -16,6 +16,8 @@ import MyBookings from "../pages/dashboard/MyBookings";
 import UpdateVehicle from "../pages/dashboard/UpdateVehicle";
 import AddVehicle from "../pages/dashboard/AddVehicle";
 import About from "../pages/About";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
+import TermsConditions from "../pages/TermsCondition";
 
 export const router = createBrowserRouter([
   {
@@ -32,11 +34,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "about",
-        element: <About></About>
+        element: <About></About>,
       },
       {
         path: "vehicle/:id",
-        element: <VehicleDetails></VehicleDetails>
+        element: <VehicleDetails></VehicleDetails>,
       },
       {
         path: "register",
@@ -47,11 +49,21 @@ export const router = createBrowserRouter([
         element: <Login></Login>,
       },
       {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms-conditions",
+        element: <TermsConditions />,
+      },
+      {
         path: "updateDetails/:id",
-        element: <PrivateRoute>
-          <UpdateVehicle></UpdateVehicle>
-        </PrivateRoute>
-      }
+        element: (
+          <PrivateRoute>
+            <UpdateVehicle></UpdateVehicle>
+          </PrivateRoute>
+        ),
+      },
     ],
   },
   {
@@ -60,30 +72,32 @@ export const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <PrivateRoute>
-      <DashboardLayout></DashboardLayout>
-    </PrivateRoute>,
+    element: (
+      <PrivateRoute>
+        <DashboardLayout></DashboardLayout>
+      </PrivateRoute>
+    ),
     children: [
       {
         index: true,
-        element: <DashboardHome></DashboardHome>
+        element: <DashboardHome></DashboardHome>,
       },
       {
         path: "profile",
-        element: <Profile></Profile>
+        element: <Profile></Profile>,
       },
       {
         path: "my-vehicles",
-        element: <MyVehicles></MyVehicles>
+        element: <MyVehicles></MyVehicles>,
       },
       {
         path: "my-bookings",
-        element: <MyBookings></MyBookings>
+        element: <MyBookings></MyBookings>,
       },
       {
         path: "add-vehicle",
-        element: <AddVehicle></AddVehicle>
-      }
-    ]
-  }
+        element: <AddVehicle></AddVehicle>,
+      },
+    ],
+  },
 ]);

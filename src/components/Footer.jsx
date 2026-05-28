@@ -285,14 +285,14 @@ const Footer = () => {
             <div className="flex items-center gap-6 text-sm text-slate-400">
 
               <Link
-                to="/"
+                to="/privacy-policy"
                 className="hover:text-sky-400 transition"
               >
                 Privacy Policy
               </Link>
 
               <Link
-                to="/"
+                to="/terms-conditions"
                 className="hover:text-sky-400 transition"
               >
                 Terms & Conditions
