@@ -126,7 +126,7 @@ const PrivacyPolicy = () => {
 
       {/* TRUST STRIP */}
       <div
-        className=" max-w-[1600px] mx-auto px-6  -mt-12 relative z-20 "
+        className=" max-w-7xl mx-auto px-6  -mt-12 relative z-20 "
       >
 
         <div
@@ -144,7 +144,7 @@ const PrivacyPolicy = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className=" h-24  bg-white/50 backdrop-blur-xl  border border-gray-400  shadow-xl  rounded-3xl  flex items-center justify-center"
+              className=" h-24  bg-white backdrop-blur-xl  border border-gray-400  shadow-xl  rounded-3xl  flex items-center justify-center"
             >
 
               <h3
@@ -165,36 +165,24 @@ const PrivacyPolicy = () => {
 
       {/* MAIN */}
       <div
-        className=" max-w-8xl  mx-auto px-6 py-28 pb-36"
+        className=" max-w-7xl  mx-auto px-6 py-20"
       >
 
         <div
-          className="
-            grid grid-cols-1
-            xl:grid-cols-[340px_1fr]
-            gap-10
-          "
+          className=" grid grid-cols-1 xl:grid-cols-[340px_1fr] gap-10"
         >
 
           {/* SIDEBAR */}
           <div>
 
             <div
-              className="
-                sticky top-32
-                bg-white/70
-                backdrop-blur-2xl
-                border border-white/40
-                shadow-xl
-                rounded-[36px]
-                p-8
-              "
+              className=" sticky top-32 bg-white/70 backdrop-blur-2xl  border border-white/20 shadow-xl rounded-xl p-6"
             >
 
               <p
                 className="
                   uppercase tracking-[0.35em]
-                  text-blue-500 text-sm
+                  text-blue-500
                   font-bold mb-8
                 "
               >
@@ -207,17 +195,7 @@ const PrivacyPolicy = () => {
                   <a
                     key={index}
                     href={`#section-${index}`}
-                    className="
-                      flex items-center justify-between
-                      gap-4
-                      px-5 py-5
-                      rounded-2xl
-                      text-gray-700
-                      font-semibold
-                      hover:bg-blue-50
-                      hover:text-blue-600
-                      hover:translate-x-1
-                      transition-all duration-300
+                    className=" flex items-center justify-between  gap-4  px-5 py-5  rounded-2xl                      text-gray-700  font-semibold  hover:bg-blue-100  hover:text-blue-600  hover:translate-x-1  transition-all duration-300
                     "
                   >
 
@@ -230,7 +208,7 @@ const PrivacyPolicy = () => {
                         {item.icon}
                       </div>
 
-                      <span className="text-[15px]">
+                      <span>
                         {item.title}
                       </span>
 
@@ -248,23 +226,13 @@ const PrivacyPolicy = () => {
           </div>
 
           {/* CONTENT */}
-          <div className="space-y-8">
+          <div className="space-y-6">
 
             {privacySections.map((item, index) => (
               <div
                 id={`section-${index}`}
                 key={index}
-                className="
-                  bg-white/75
-                  backdrop-blur-xl
-                  border border-white/50
-                  shadow-lg
-                  rounded-[36px]
-                  p-10 md:p-14
-                  hover:-translate-y-1
-                  hover:shadow-2xl
-                  transition-all duration-500
-                "
+                className=" bg-white/75  backdrop-blur-xl  border border-white/50  shadow-lg  rounded-2xl  p-8 md:p-12  hover:-translate-y-1  hover:shadow-2xl  transition-all duration-500"
               >
 
                 <div className="
@@ -273,15 +241,7 @@ const PrivacyPolicy = () => {
                 ">
 
                   <div
-                    className="
-                      w-20 h-20
-                      rounded-3xl
-                      bg-slate-100
-                      flex items-center justify-center
-                      text-slate-700
-                      text-3xl
-                      shrink-0
-                    "
+                    className=" w-20 h-20  rounded-3xl  bg-blue-100  flex items-center justify-center  text-slate-700  text-3xl  shrink-0"
                   >
                     {item.icon}
                   </div>
@@ -320,14 +280,7 @@ const PrivacyPolicy = () => {
 
             {/* LARGE CTA */}
             <div
-              className="
-                relative overflow-hidden
-                bg-[#0f172a]
-                rounded-[40px]
-                p-14 md:p-20
-                text-white
-                shadow-2xl
-              "
+              className=" relative overflow-hidden bg-[#0f172a]  rounded-2xl p-14  text-white  shadow-2xl"
             >
 
               <div
@@ -361,12 +314,7 @@ const PrivacyPolicy = () => {
                 </p>
 
                 <h2
-                  className="
-                    text-5xl md:text-6xl
-                    font-black
-                    leading-tight
-                    max-w-4xl
-                  "
+                  className=" text-5xl font-black  leading-tight  max-w-4xl"
                 >
                   Questions About
                   <br />
@@ -374,13 +322,7 @@ const PrivacyPolicy = () => {
                 </h2>
 
                 <p
-                  className="
-                    text-gray-300
-                    text-xl
-                    leading-9
-                    font-medium
-                    max-w-3xl
-                    mt-8
+                  className=" text-gray-300  text-lg  leading-9  font-medium  mt-6
                   "
                 >
                   Our support and legal team are
@@ -392,7 +334,7 @@ const PrivacyPolicy = () => {
 
                 <div className="
                   flex flex-wrap gap-5
-                  mt-10
+                  mt-8
                 ">
 
                   <button
@@ -410,16 +352,7 @@ const PrivacyPolicy = () => {
                   </button>
 
                   <button
-                    className="
-                      h-16 px-10
-                      rounded-2xl
-                      border border-white/20
-                      bg-white/5
-                      backdrop-blur-xl
-                      text-white
-                      font-bold text-lg
-                      hover:bg-white/10
-                      transition-all duration-300
+                    className=" h-16 px-10  rounded-2xl  border border-white/20  bg-white/5  backdrop-blur-xl  text-white  font-bold text-lg  hover:bg-white/10  transition-all duration-300
                     "
                   >
                     Legal Inquiries
