@@ -76,7 +76,7 @@ const MyBookings = () => {
     <section
       className="
       min-h-screen
-      bg-[#f6f8fc]
+      bg-gray-100
       p-6 md:p-8
     "
     >
